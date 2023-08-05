@@ -1,0 +1,1 @@
+.\aria2c.exe --enable-rpc --rpc-listen-all --rpc-secret xia980220
