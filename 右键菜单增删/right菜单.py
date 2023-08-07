@@ -5,6 +5,7 @@ import ctypes
 import sys
 from tkinter import messagebox
 
+# pyinstaller -F -w right菜单.py
 
 def is_admin():
     try:
@@ -55,7 +56,7 @@ def main():
     Label(root, text="Add File Types:").grid(row=0, column=0, sticky="ew")
     Label(root, text="Remove File Types:").grid(row=0, column=1, sticky="ew")
 
-    add_file_types = [".md", ".py", ".ps1"]
+    add_file_types = [".md", ".py", ".ps1", ".bat"]
     remove_file_types = [".bmp", ".lnk", ".zip", ".paint", ".rft"]
     add_vars = {}
     remove_vars = {}

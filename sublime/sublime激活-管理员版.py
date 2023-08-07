@@ -1,4 +1,6 @@
-import ctypes, sys
+import ctypes
+import sys
+
 
 def is_admin():
     try:
@@ -6,11 +8,13 @@ def is_admin():
     except:
         return False
 
+
 if is_admin():
     # 在这里添加原来的代码
     old_hex_string = '807805000f94c1'
-    # old_hex_string = 'c64005014885c9'
     new_hex_string = 'c64005014885c9'
+    # old_hex_string = 'c64005014885c9'
+    # new_hex_string = '807805000f94c1'
 
     with open('C:\\Program Files\\Sublime Text\\sublime_text.exe', 'rb') as f:
         binary_data = f.read()
